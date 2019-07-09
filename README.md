@@ -12,7 +12,10 @@ Atom text editor for PC/Mac
 
 ### Alternatives
 
+[Marvel](https://marvelapp.com) is perfect for individuals and teams of all sizes. Start for free.
+
 - [Repl.it](https://repl.it/) gives you an instant IDE to learn, build, collaborate, and host all in one place.
+- [CodeSandbox](https://codesandbox.io/) is an online editor that helps you create web applications, from prototype to deployment.
 - [CodePen](https://codepen.io/) is a social development environment for front-end designers and developers.
 - [Photopea](https://www.photopea.com/) is a free online image editor, that runs without plugins. It can both read and save PSD files.
 
@@ -102,6 +105,7 @@ https://www.lipsum.com/
 https://fonts.adobe.com/
 https://fonts.google.com/
 https://www.fontsquirrel.com/
+https://fontawesome.com/start
 
 ## Social Media
 
