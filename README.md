@@ -18,7 +18,7 @@ Atom text editor for PC/Mac
 - [CodeSandbox](https://codesandbox.io/) is an online editor that helps you create web applications, from prototype to deployment.
 - [CodePen](https://codepen.io/) is a social development environment for front-end designers and developers.
 - [Photopea](https://www.photopea.com/) is a free online image editor, that runs without plugins. It can both read and save PSD files.
-
+- [CodeSandbox](https://codesandbox.io/) an online code editor
 
 ## Browsers to Install
 
@@ -117,8 +117,11 @@ https://fontawesome.com/start
 - [Pinterest](https://www.pinterest.com/) - creating and marketing images on a smaller scale, GIFs and videos
 - [YouTube](https://developers.google.com/youtube/) - how to manage YouTube content
 - [LinkedIn](https://www.linkedin.com/) -  professional networking
+- [Alignable](https://www.alignable.com/) The Small Business Network
 
 ## README: Basic writing and formatting syntax
+
+[Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 Create sophisticated formatting for your prose and code on GitHub with simple syntax.
 [Learn more](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
