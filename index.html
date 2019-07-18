@@ -12,15 +12,37 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 -->
+  <!-- Adobe Typekit -->
+  <link rel="stylesheet" href="https://use.typekit.net/opf3uqn.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+
   <style type="text/css">
     /*
       This is an internal CSS guide
     */
+    * { margin: 0; padding: 0; }
     .clearfix::after {
       content: "";
       clear: both;
       display: table;
     }
+    /*
+      Including non-browser fonts
+      Source: Adobe Typekit
+    */
+    .poppinsBlack {
+      font-family: poppins,sans-serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+    /*
+      Including non-browser fonts
+      Source: Google Fonts
+      ----
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Lato', sans-serif;
+    */
 
     header, .header { position: relative; }
     .header .logo {
@@ -32,7 +54,7 @@
       width: 50%;
       padding: 2% 0;
     }
-    nav ul { margin: 0; padding: 0; text-align: right; }
+    nav ul { margin: 0; padding: 0; text-align: right; font-family: 'Roboto', sans-serif; }
     nav ul li { display: inline; margin-right: 10%; }
     nav ul li a { text-decoration: none; color: #444; }
     .hero {
@@ -44,6 +66,7 @@
       padding: 10% 0;
       text-align: center;
     }
+    /* Hero or Jumbotron */
     .hero h1 {
       color: #fff;
       font-size: 6em;
@@ -52,18 +75,25 @@
     .hero p {
       margin: 0;
       font-size: 3em;
+      font-family: 'Lato', sans-serif;
     }
 
     .threeColumns { position: relative; }
     .threeColumns .column {
       float: left;
-      width: 33%;
+      width: 33.33%;
       color: #fff;
       margin: 2% 0;
       text-align: center;
+      padding-bottom: 20px;
+    }
+    .threeColumns .column .title {
+      background-color: gray;
+      padding: 10px 0;
+      font-size: 2em;
     }
     .threeColumns .column.col-1 { background-color: pink; }
-    .threeColumns .column.col-2 { background-color: gray; }
+    .threeColumns .column.col-2 { background-color: purple; }
     .threeColumns .column.col-3 { background-color: black; }
 
     footer {
@@ -97,7 +127,7 @@
 
 <div class="wrapper">
   <div class="hero">
-    <h1>Pricing</h1>
+    <h1 class="poppinsBlack">Pricing</h1>
     <p>Text goes here.</p>
   </div>
 
@@ -106,13 +136,13 @@
       <div class="title">
         <h2>Free</h2>
       </div>
-      <p>Column 1</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="column col-2">
-      <p>Column 2</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id corporis animi et illum in atque molestiae omnis libero, quia recusandae voluptate, soluta, laboriosam. Quam totam enim, saepe obcaecati nihil.</p>
     </div>
     <div class="column col-3">
-      <p>Column 3</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
 
