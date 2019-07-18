@@ -22,6 +22,7 @@
       This is an internal CSS guide
     */
     * { margin: 0; padding: 0; }
+    img { display: block; width: 100%; }
     .clearfix::after {
       content: "";
       clear: both;
@@ -47,7 +48,7 @@
     header, .header { position: relative; }
     .header .logo {
       float: left;
-      width: 33%;
+      width: 100px;
     }
     .header nav {
       float: right;
@@ -104,6 +105,21 @@
       text-align: center;
       color: #fff;
     }
+
+    @media only screen and (max-width: 600px) {
+      .header .logo, .header nav {
+        float: none;
+        width: 100%;
+      }
+      .header .logo { margin: auto 0; }
+      .header .logo img { width: 30px; margin: auto; }
+      .header nav ul { text-align: center; }
+      .header nav ul li:last-child { margin-right: 0; }
+      .threeColumns .column {
+        float: none;
+        width: 100%;
+      }
+    }
   </style>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -111,7 +127,7 @@
 <header>
   <div class="header clearfix">
     <div class="logo">
-      <img src="img/logo.png" width="100" alt="Company Logo">
+      <a href="#"><img src="img/logo.png" width="100" alt="Company Logo"></a>
     </div>
     <nav class="navbar">
       <div class="navBar nav-bar nav_bar">
