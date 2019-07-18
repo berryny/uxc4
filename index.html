@@ -5,74 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UXC4 Project</title>
+<!--
+  HTML5 Boilerplate helps you build fast, robust, and adaptable web apps or sites. Kick-start your project with the combined knowledge and effort of 100s of developers, all in one little package.
+-->
+<!--
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+-->
   <style type="text/css">
-    .mycontainer {
-      margin: 0 auto;
-      width: 70%;
-      border: 1px solid red;
+    /*
+      This is an internal CSS guide
+    */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
     }
+
+    header, .header { position: relative; }
+    .header .logo {
+      float: left;
+      width: 33%;
+    }
+    .header nav {
+      float: right;
+      width: 33%;
+    }
+    nav ul { margin: 0; padding: 0; text-align: right; }
+    nav ul li { display: inline; margin-right: 10%; }
+    nav ul li a { text-decoration: none; color: #444; }
+    .hero {
+      background-color: transparent;
+      background-image: url('img/adults-casual.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      padding: 10% 0;
+      text-align: center;
+    }
+    .hero h1 {
+      color: #fff;
+      font-size: 6em;
+      margin-bottom: 0;
+    }
+    .hero p {
+      margin: 0;
+      font-size: 3em;
+    }
+
   </style>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!--
-    I am a comment section
-  -->
-  <h1>Heading 1</h1>
-  <h2>Heading 2</h2>
-  <h3>Heading 3</h3>
-  <h4>Heading 4</h4>
-  <h5>Heading 5</h5>
-  <h6>Heading 6</h6>
+<header>
+  <div class="header clearfix">
+    <div class="logo">
+      <img src="img/logo.png" width="100" alt="Company Logo">
+    </div>
+    <nav class="navbar">
+      <div class="navBar nav-bar nav_bar">
+        <ul class="navMenu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Conact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
 
-  <p>This defines a paragraph.</p>
-  <p>This is normal text - <b>and this is bold text</b>.</p>
-  <p><strong>Strong text</strong></p>
-  <p>He named his car <i>The lightning</i>, because it was very fast.</p>
-  <p><em>Emphasized text</em></p>
-  <p><a href="https://www.w3schools.com/tags/" target="_self">Visit HTML Element Reference!</a></p>
-  <p><a href="https://www.w3schools.com/tags/" target="_blank">Visit HTML Element Reference in a new tab!</a></p>
-  <p>This text contains<br>a line break.</p>
-  <p>On July 14<sup>th</sup> - <br>the French Revolution begins with the fall of the Bastille Prison</p>
+<div class="wrapper">
+  <div class="hero">
+    <h1>Pricing</h1>
+    <p>Text goes here.</p>
+  </div>
 
-  <!--Use the <hr> tag to define a thematic change in the content-->
-  <h1>HTML</h1>
-  <p>HTML is a language for describing web pages.....</p>
-  <hr>
-  <h1>CSS</h1>
-  <p>CSS defines how to display HTML elements.....</p>
+  <div class="threeColumns clearfix">
+    <div class="col-1">
+      <div class="title">
+        <h2>Free</h2>
+      </div>
+      <p>Column 1</p>
+    </div>
+    <div class="col-2">
+      <p>Column 2</p>
+    </div>
+    <div class="col-3">
+      <p>Column 3</p>
+    </div>
+  </div>
 
-  <!--Download an image in the img folder and call the image file name -->
-  <img src="img/smiley.gif" alt="Smiley face" height="42" width="42">
 
-  <!-- The span tag is using inline CSS -->
-  <p>My mother has <span style="color:blue">blue</span> eyes.</p>
 
-  <!--An unordered HTML list-->
-  <ul>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ul>
-  <ol>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ol>
 
-  <!--2 different ordered lists-->
-  <ol start="50">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ol>
-  <!--Creating a DIV with a classname-->
-  <div class="mycontainer">
-    <h2>Container</h2>
-    <p>I live inside a container!</p>
-  </div><!--end DIV-->
+</div><!-- end .wrapper-->
 
-  <p>W3Schools.com - the world's largest web development site.</p>
-  <p><small>Copyright 1999-2050 by Refsnes Data</small></p>
+<footer>
+  <div class="footer">
+    <p>&copy; 2019 Coding Instuctor HTML</p>
+    <p>.Copyright (c) 2019 Copyright Holder All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+
+
 </body>
 </html>
