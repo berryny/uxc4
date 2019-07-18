@@ -29,7 +29,8 @@
     }
     .header nav {
       float: right;
-      width: 33%;
+      width: 50%;
+      padding: 2% 0;
     }
     nav ul { margin: 0; padding: 0; text-align: right; }
     nav ul li { display: inline; margin-right: 10%; }
@@ -53,6 +54,26 @@
       font-size: 3em;
     }
 
+    .threeColumns { position: relative; }
+    .threeColumns .column {
+      float: left;
+      width: 33%;
+      color: #fff;
+      margin: 2% 0;
+      text-align: center;
+    }
+    .threeColumns .column.col-1 { background-color: pink; }
+    .threeColumns .column.col-2 { background-color: gray; }
+    .threeColumns .column.col-3 { background-color: black; }
+
+    footer {
+      background-color: #444;
+      padding: 5% 0;
+    }
+    footer .footer {
+      text-align: center;
+      color: #fff;
+    }
   </style>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -81,16 +102,16 @@
   </div>
 
   <div class="threeColumns clearfix">
-    <div class="col-1">
+    <div class="column col-1">
       <div class="title">
         <h2>Free</h2>
       </div>
       <p>Column 1</p>
     </div>
-    <div class="col-2">
+    <div class="column col-2">
       <p>Column 2</p>
     </div>
-    <div class="col-3">
+    <div class="column col-3">
       <p>Column 3</p>
     </div>
   </div>
