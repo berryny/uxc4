@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nav Bar - CSS Flexbox</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <style type="text/css">
+    .header {
+      position: relative;
+      background: #555;
+    }
+    .logo { float: left; width: 30%; }
+    .navcontainer { float: right; width: 70%; }
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      background: transparent;
+
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      -webkit-flex-flow: row wrap;
+      justify-content: flex-end;
+    }
+    .menu a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      color: white;
+    }
+
+    .menu a:hover {
+      background: #000;
+    }
+    /* Medium screens */
+    @media all and (max-width: 800px) {
+      .menu {
+        /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        justify-content: space-around;
+      }
+    }
+
+    /* Small screens */
+    @media all and (max-width: 500px) {
+      .logo, .navcontainer { float: none; width: 100%; }
+      .logo img { display: block; margin: 0 auto; }
+      .menu {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header clearfix">
+      <div class="logo">
+        <img src="img/logo.png" alt="Company Logo" height="50">
+      </div>
+      <nav class="navcontainer">
+        <ul class="menu">
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">UXUI Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main">
+
+    </div>
+  </div>
+</body>
+</html>
