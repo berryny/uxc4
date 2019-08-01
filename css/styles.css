@@ -1,9 +1,9 @@
 /*
 	Import Fontawesome to render social media icons locally
 	Learn more at https://fontawesome.com/start
-	Files: /css/all.min.css, /webfonts
+	Files: css/all.min.css, /webfonts
 */
-@import "/css/all.min.css";
+@import "all.min.css";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
