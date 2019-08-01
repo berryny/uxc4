@@ -248,7 +248,7 @@ nav ul li a:hover {
 /* CSS: Hero / Jumbotron Type 1*/
 .hero {
   background-color: transparent;
-  background-image: url('/img/adults-casual.jpg');
+  background-image: url('../img/adults-casual.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
