@@ -1,197 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UXC4 Project</title>
-<!--
-  HTML5 Boilerplate helps you build fast, robust, and adaptable web apps or sites. Kick-start your project with the combined knowledge and effort of 100s of developers, all in one little package.
--->
-<!--
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
--->
-  <!-- Adobe Typekit -->
-  <link rel="stylesheet" href="https://use.typekit.net/opf3uqn.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
-
-  <style type="text/css">
-    /*
-      This is an internal CSS guide
-    */
-    * { margin: 0; padding: 0; }
-    img { display: block; width: 100%; }
-    .clearfix::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-    /*
-      Including non-browser fonts
-      Source: Adobe Typekit
-    */
-    .poppinsBlack {
-      font-family: poppins,sans-serif;
-      font-weight: 900;
-      font-style: normal;
-    }
-    /*
-      Including non-browser fonts
-      Source: Google Fonts
-      ----
-      font-family: 'Roboto', sans-serif;
-      font-family: 'Lato', sans-serif;
-    */
-
-    header, .header { position: relative; }
-    .header .logo {
-      float: left;
-      width: 100px;
-    }
-    .header nav {
-      float: right;
-      width: 50%;
-      padding: 2% 0;
-    }
-    nav ul { margin: 0; padding: 0; text-align: right; font-family: 'Roboto', sans-serif; }
-    nav ul li { display: inline; margin-right: 10%; }
-    nav ul li a { text-decoration: none; color: #444; }
-    .hero {
-      background-color: transparent;
-      background-image: url('img/adults-casual.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: top;
-      padding: 10% 0;
-      text-align: center;
-    }
-    /* Hero or Jumbotron */
-    .hero h1 {
-      color: #fff;
-      font-size: 6em;
-      margin-bottom: 0;
-    }
-    .hero p {
-      margin: 0;
-      font-size: 3em;
-      font-family: 'Lato', sans-serif;
-    }
-
-    .threeColumns { position: relative; }
-    .threeColumns .column {
-      float: left;
-      width: 33.33%;
-      color: #fff;
-      margin: 2% 0;
-      text-align: center;
-      padding-bottom: 20px;
-    }
-    .threeColumns .column .title {
-      background-color: gray;
-      padding: 10px 0;
-      font-size: 2em;
-    }
-    .threeColumns .column.col-1 { background-color: pink; }
-    .threeColumns .column.col-2 { background-color: purple; }
-    .threeColumns .column.col-3 { background-color: black; }
-
-    footer {
-      background-color: #444;
-      padding: 5% 0;
-    }
-    footer .footer {
-      text-align: center;
-      color: #fff;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .header .logo, .header nav {
-        float: none;
-        width: 100%;
-      }
-      .header .logo { margin: auto 0; }
-      .header .logo img { width: 30px; margin: auto; }
-      .header nav ul { text-align: center; }
-      .header nav ul li:last-child { margin-right: 0; }
-      .threeColumns .column {
-        float: none;
-        width: 100%;
-      }
-    }
-  </style>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-<!--
-<header>
-  <div class="header clearfix">
-    <div class="logo">
-      <a href="#"><img src="img/logo.png" width="100" alt="Company Logo"></a>
-    </div>
-    <nav class="navbar">
-      <div class="navBar nav-bar nav_bar">
-        <ul class="navMenu">
-          <li><a href="about.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Conact</a></li>
-        </ul>
+  <div class="wrapper">
+    <header>
+      <div class="header clearfix">
+        <div class="logo">
+          <a href="#"><img src="img/logo.png" width="100" alt="Company Logo"></a>
+        </div>
+        <nav class="navbar">
+          <div class="navBar nav-bar nav_bar">
+            <ul class="navMenu">
+              <li><a href="about.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Conact</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</header>
--->
-<div class="wrapper">
+    </header>
 
+    <main>
+      <div class="main">
+        <!-- Display Two Hero Model Types -->
+        <div class="hero">
+          <h1 class="poppinsBlack">Hero Type 1</h1>
+          <p>I am a hero text with a lot of words.</p>
+        </div>
+        <div id="heroID" class="heroClass">
+          <div class="hero_txt">
+            <p><span class="small_txt">Section Text</span></p>
+            <p><small class="small_txt">Section Text</small></p>
+            <h1>Hero Type 2</h1>
+            <a href="#" target="_blank">learn more</a>
+          </div>
+        </div>
 
-  <div id="heroID" class="heroClass">
-    <div class="hero_img">
-      <a href="#" target="_blank">
-        <img src="img/adults-casual.jpg" alt="group of adults">
-      </a>
-    </div>
-    <div class="hero_txt" style="border:3px solid red; margin: 10px 40px; padding:30px 10px 0 70px; text-align:center;">
-      <p><span class="small_txt" style="font-size:.5em;">Section Text</span></p>
-      <p><small class="small_txt">Section Text</small></p>
-      <h1 style="color:#FB2660; font-size:60px; font-weight:normal;">I am a hero text with a lot of words.</h1>
-      <a href="#" target="_blank">learn more</a>
-    </div>
-  </div>
-<!--
-  <div class="hero">
-    <h1 class="poppinsBlack">Pricing</h1>
-    <p>I am a hero text with a lot of words.</p>
-  </div>
-
-  <div class="threeColumns clearfix">
-    <div class="column col-1">
-      <div class="title">
-        <h2>Free</h2>
+        <div class="row clearfix">
+          <div class="col col-1">
+            <a href="#" target="_blank">
+              <img src="img/adults-casual.jpg" alt="group of adults">
+            </a>
+            <div class="txt">
+              <h2>Free</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="col col-2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id corporis animi et illum in atque molestiae omnis libero, quia recusandae voluptate, soluta, laboriosam. Quam totam enim, saepe obcaecati nihil.</p>
+          </div>
+          <div class="col col-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class="box" id="boxes">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="about.html">About Page</a>
+        </div>
       </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="column col-2">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit id corporis animi et illum in atque molestiae omnis libero, quia recusandae voluptate, soluta, laboriosam. Quam totam enim, saepe obcaecati nihil.</p>
-    </div>
-    <div class="column col-3">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-  </div>
--->
+    </main>
 
+    <footer>
+      <div class="footer">
+        <p>&copy; 2019 Coding Instuctor HTML</p>
+        <p>Copyright &copy; 2019 Copyright Holder All Rights Reserved.</p>
+      </div>
+    </footer>
 
-
-</div><!-- end .wrapper-->
-
-<!--
-<footer>
-  <div class="footer">
-    <p>&copy; 2019 Coding Instuctor HTML</p>
-    <p>.Copyright &copy; 2019 Copyright Holder All Rights Reserved.</p>
-  </div>
-</footer>
--->
+  </div><!--end .wrapper -->
 
 </body>
 </html>

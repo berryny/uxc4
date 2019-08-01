@@ -1,12 +1,137 @@
-@import url("https://use.typekit.net/opf3uqn.css");
-@import url("/css/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
 
+/*
+	Including non-browser fonts
+	Source: Google Fonts
+	----
+	font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
+*/
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* typekit Font: Lato */
+.latoItalic {
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.latoBoldItalic {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.latoBold {
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.latoRegular {
+  font-family: lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+	Including non-browser fonts
+	Source: Adobe Typekit Fonts
+	----
+	.tk-open-sans { font-family: "open-sans",sans-serif; }
+	.tk-lato { font-family: "lato",sans-serif; }
+	.tk-open-sans-condensed { font-family: "open-sans-condensed",sans-serif; }
+	.tk-poppins { font-family: "poppins",sans-serif; }
+*/
+@import url("https://use.typekit.net/opf3uqn.css");
+
+.poppinsBlack {
+  font-family: poppins, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppinsItalic {
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppinsRegular {
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppinsBoldItalic {
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppinsBold {
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppinsBlack {
+  font-family: poppins, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*
+	HTML boilerplate
+	HTML5 Boilerplate is an HTML, CSS and JavaScript template for creating HTML5 websites with cross-browser capability.
+	https://html5boilerplate.com/
+*/
+@import url("/css/normalize.css");
+@import url("/css/main.css");
+
+/*
+	@font-face is a css rule which allows you to download a particular font from your server to render a webpage if the user hasn't got that font installed.
+	http://www.font-face.com
+*/
+@font-face {
+  font-family: '2Dumb-webfont';
+  src: url('/fonts/2dumb_regular_macroman/2Dumb-webfont.eot');
+  src: url('/fonts/2dumb_regular_macroman/2Dumb-webfont.eot?iefix') format('eot'),
+    url('/fonts/2dumb_regular_macroman/2Dumb-webfont.woff') format('woff'),
+    url('/fonts/2dumb_regular_macroman/2Dumb-webfont.ttf') format('truetype'),
+    url('/fonts/2dumb_regular_macroman/2Dumb-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '3Dumb-webfont';
+  src: url('/fonts/3dumb_regular_macroman/3Dumb-webfont.eot');
+  src: url('/fonts/3dumb_regular_macroman/3Dumb-webfont.eot?iefix') format('eot'),
+    url('/fonts/3dumb_regular_macroman/3Dumb-webfont.woff') format('woff'),
+    url('/fonts/3dumb_regular_macroman/3Dumb-webfont.ttf') format('truetype'),
+    url('/fonts/3dumb_regular_macroman/3Dumb-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+	Including non-browser fonts
+	Source: Adobe Typekit
+*/
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
 }
+
 /*
 * Clearfix: contain floats
 *
@@ -18,7 +143,6 @@ body {
 * 2. The use of `table` rather than `block` is only necessary if using
 *    `:before` to contain the top-margins of child elements.
 */
-
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -31,16 +155,80 @@ body {
   clear: both;
 }
 
-.row {
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+p {
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Method to styling global anchor links */
+a,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #444;
+}
+
+/* Method to styling hover/mouseover anchor links */
+a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+/* CSS for Header and Nav Bar */
+header, .header {
   position: relative;
 }
-.row .col {
+
+.header .logo {
   float: left;
-  width: 30%;
+  width: 100px;
 }
-.row .col2 {
+
+.header nav {
   float: right;
+  width: 50%;
+  padding: 2% 0;
 }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10%;
+}
+
+/* Method to styling navbar anchor links */
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Method to styling navbar hover/mouseover anchor links */
+nav ul li a:hover {
+  text-decoration: none;
+  color: red;
+  border-bottom: 3px solid black;
+  padding-bottom: 5px;
+}
+
 #header h1 {
   margin: 0 0 29px;
   line-height: 84px;
@@ -50,50 +238,176 @@ body {
   font-family: poppins;
 }
 
-/* typekit Font: Lato */
-.latoItalic {
-  font-family: lato,sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-.latoBoldItalic {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-.latoBold {
-  font-family: lato, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.latoRegular {
-  font-family: lato, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+/* CSS: Hero / Jumbotron Type 1*/
+.hero {
+  background-color: transparent;
+  background-image: url('/img/adults-casual.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 10% 0;
+  text-align: center;
 }
 
-.poppinsItalic {
-  font-family: poppins, sans-serif;
-  font-weight: 400;
-  font-style: italic;
+.hero h1 {
+  color: #fff;
+  font-size: 6em;
+  margin-bottom: 0;
 }
-.poppinsRegular {
-  font-family: poppins, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+.hero p {
+  margin: 0;
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
 }
-.poppinsBoldItalic {
-  font-family: poppins, sans-serif;
-  font-weight: 700;
-  font-style: italic;
+
+/* CSS: Hero / Jumbotron Type 2 */
+.heroClass .hero_txt {
+  border: 3px solid red;
+  margin: 10px 0;
+  padding: 30px 10px 0 70px;
+  text-align: center;
 }
-.poppinsBold {
-  font-family: poppins, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+
+.heroClass span.small_txt {
+  font-size: .5em;
 }
-.poppinsBlack {
-  font-family: poppins,sans-serif;
-  font-weight: 900;
-  font-style: normal;
+
+.heroClass h1 {
+  font-family: '3Dumb-webfont';
+  color: #FB2660;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+/* Method to styling anchor links */
+.heroClass a,
+.heroClass a:link,
+.heroClass a:active,
+.heroClass a:visited {
+  text-decoration: none;
+  color: green;
+}
+
+/* Method to styling hover/mouseover anchor links */
+.heroClass a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+/*CSS: Create Two Column Layout */
+.row {
+  position: relative;
+}
+
+.row .col {
+  float: left;
+  width: 32%;
+  margin-left: 2%;
+}
+
+.row .col:first-child {
+  margin-left: 0;
+}
+
+.row .col2 {
+  float: right;
+}
+
+/* CSS: Create Three Column Layout */
+.threeColumns {
+  position: relative;
+}
+
+.threeColumns .column {
+  float: left;
+  width: 33.33%;
+  color: #fff;
+  margin: 2% 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.threeColumns .column .title {
+  background-color: gray;
+  padding: 10px 0;
+  font-size: 2em;
+}
+
+.threeColumns .column.col-1 {
+  background-color: pink;
+}
+
+.threeColumns .column.col-2 {
+  background-color: purple;
+}
+
+.threeColumns .column.col-3 {
+  background-color: black;
+}
+
+#boxes {
+  border: 5px solid blue;
+}
+
+.box {
+  border: 1px solid red;
+}
+
+.box p {
+  padding: 5%;
+  font-weight: bold;
+}
+
+/* Styling Footer */
+footer {
+  background-color: #444;
+  padding: 5% 0;
+}
+
+footer .footer {
+  text-align: center;
+  color: #fff;
+}
+
+/* Responsive Design for mobile phones */
+@media only screen and (max-width: 600px) {
+  .header .logo, .header nav {
+    float: none;
+    width: 100%;
+  }
+
+  .header .logo {
+    margin: auto 0;
+  }
+
+  .header .logo img {
+    width: 30px;
+    margin: auto;
+  }
+
+  .header nav ul {
+    text-align: center;
+  }
+
+  .header nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  .threeColumns .column {
+    float: none;
+    width: 100%;
+  }
+
+	/*
+	Using margin-left: 2% !important; is to agressive
+	Override .row .col:firt-child margin-left
+	by calling the class .wrapper (parent)
+	*/
+  .wrapper .row .col {
+    float: none;
+    width: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
 }
