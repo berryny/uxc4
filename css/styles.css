@@ -1,3 +1,10 @@
+/*
+	Import Fontawesome to render social media icons locally
+	Learn more at https://fontawesome.com/start
+	Files: /css/all.min.css, /webfonts
+*/
+@import "/css/all.min.css";
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap');
 
@@ -304,6 +311,8 @@ nav ul li a:hover {
   float: left;
   width: 32%;
   margin-left: 2%;
+	-webkit-transition: width 2s; /* Safari prior 6.1 */
+ 	transition: width 2s;
 }
 
 .row .col:first-child {
@@ -369,7 +378,12 @@ footer .footer {
   text-align: center;
   color: #fff;
 }
-
+.footer .socialmedia a {
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	margin-right: 1%;
+}
 /* Responsive Design for mobile phones */
 @media only screen and (max-width: 600px) {
   .header .logo, .header nav {
