@@ -140,6 +140,8 @@ https://www.pexels.com/search/google/
 https://www.canva.com/photos/
 - *Text/Content:*
 https://www.lipsum.com/
+- *Lorem Ipsum for photos:*
+https://picsum.photos/
 - *Font:*
 https://fonts.adobe.com/
 https://fonts.google.com/
