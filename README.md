@@ -9,11 +9,15 @@ MAMP is a free, local server environment that can be installed under macOS and W
 
 Atom text editor for PC/Mac
 [Download](https://atom.io/)
+- Install Helpful Plugins
+-- [Download Emmet](https://emmet.io/download/)
+-- [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
+-- [Atom-Beautify](https://atom.io/packages/atom-beautify)
+-- [Color Picker](https://atom.io/packages/color-picker)
 
 ### Alternatives
 
-[Marvel](https://marvelapp.com) is perfect for individuals and teams of all sizes. Start for free.
-
+- [Marvel](https://marvelapp.com) is perfect for individuals and teams of all sizes. Start for free.
 - [Repl.it](https://repl.it/) gives you an instant IDE to learn, build, collaborate, and host all in one place.
 - [CodeSandbox](https://codesandbox.io/) is an online editor that helps you create web applications, from prototype to deployment.
 - [CodePen](https://codepen.io/) is a social development environment for front-end designers and developers.
@@ -75,6 +79,41 @@ h1 {
 p {
     font-family: Verdana;font-size: 20px;
 }
+```
+
+## Using Emmet
+Utilize the Emmet Plugin for lazy coding
+*Type* or *Copy and Paste* the below into a saved html file
+
+```
+html>(head>meta[http-equiv="Content-Type" content="text/html;charset=${charset};ie=edge"]+meta[ name="viewport" content="width=device-width, initial-scale=1.0"]+title{${1:My Portfolio Site}}+link:css)+body>div.wrapper>(header.header>nav+menu)+(main.main>div.content>p)+footer.footer
+```
+
+Click the *Tab* key
+Does the below syntax render? If yes, Congratulations!
+```
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8;ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav></nav>
+      <menu></menu>
+    </header>
+    <main class="main">
+      <div class="content">
+        <p></p>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+</body>
+</html>
 ```
 
 ## Resources
