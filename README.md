@@ -16,11 +16,7 @@ Atom text editor for PC/Mac
 - [Atom-Beautify](https://atom.io/packages/atom-beautify)
 - [Color Picker](https://atom.io/packages/color-picker)
 
-<<<<<<< HEAD
-- [Marvel](https://marvelapp.com) is perfect for individuals and teams of all sizes. Start for free.
-=======
 ### Alternatives
->>>>>>> 57500da1219bd658e95b1c2bca87e394e31bbba0
 
 - [Marvel](https://marvelapp.com) is perfect for individuals and teams of all sizes. Start for free.
 - [Repl.it](https://repl.it/) gives you an instant IDE to learn, build, collaborate, and host all in one place.

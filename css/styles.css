@@ -372,6 +372,7 @@ nav ul li a:hover {
 footer {
   background-color: #444;
   padding: 5% 0;
+  margin-top: 5%;
 }
 
 footer .footer {
@@ -430,4 +431,40 @@ footer .footer {
 table {
   width: 100%;
   margin-bottom: 2%;
+}
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: 1px solid red;
+}
+.flexbox .flex-item {
+  width: 30%;
+  background-color: yellow;
+  outline: 1px solid green;
+}
+
+/***
+  Everything you need to learn CSS Grid Layout
+  Learn more at https://gridbyexample.com/
+***/
+.grid {
+  display: grid;
+  margin: 2% 0;
+  /*
+    The fr unit (a "fraction") can be used when
+    defining grids like any other CSS length such as
+    %, px or em.
+  */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-column-gap: 2%; */
+  /* grid-row-gap: 10px; */
+  /* Short hand */
+  grid-gap: 1em;
+
+}
+.grid .grid-item {
+  outline: 1px solid orange;
+  text-align: center;
 }
