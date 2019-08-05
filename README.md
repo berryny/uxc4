@@ -11,7 +11,7 @@ Atom text editor for PC/Mac
 [Download](https://atom.io/)
 
 ### Install Helpful Atom Plugins
-- [Download Emmet](https://emmet.io/download/)
+- [Emmet](https://atom.io/packages/emmet)
 - [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
 - [Atom-Beautify](https://atom.io/packages/atom-beautify)
 - [Color Picker](https://atom.io/packages/color-picker)
@@ -118,6 +118,10 @@ Does the below syntax render? If yes, Congratulations!
 </body>
 </html>
 ```
+
+If no, install the Emmet plugin for Atom? [Installation](https://atom.io/packages/emmet)
+Review the [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
+
 
 ## Resources
 
