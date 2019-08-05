@@ -9,11 +9,12 @@ MAMP is a free, local server environment that can be installed under macOS and W
 
 Atom text editor for PC/Mac
 [Download](https://atom.io/)
-- Install Helpful Plugins
--- [Download Emmet](https://emmet.io/download/)
--- [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
--- [Atom-Beautify](https://atom.io/packages/atom-beautify)
--- [Color Picker](https://atom.io/packages/color-picker)
+
+### Install Helpful Atom Plugins
+- [Download Emmet](https://emmet.io/download/)
+- [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
+- [Atom-Beautify](https://atom.io/packages/atom-beautify)
+- [Color Picker](https://atom.io/packages/color-picker)
 
 ### Alternatives
 
@@ -83,6 +84,7 @@ p {
 
 ## Using Emmet
 Utilize the Emmet Plugin for lazy coding
+
 *Type* or *Copy and Paste* the below into a saved html file
 
 ```
@@ -90,6 +92,7 @@ html>(head>meta[http-equiv="Content-Type" content="text/html;charset=${charset};
 ```
 
 Click the *Tab* key
+
 Does the below syntax render? If yes, Congratulations!
 ```
 <html>
