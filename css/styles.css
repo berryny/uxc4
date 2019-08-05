@@ -425,3 +425,9 @@ footer .footer {
     margin-right: 2%;
   }
 }
+
+/* Flexbox and Grid Styles */
+table {
+  width: 100%;
+  margin-bottom: 2%;
+}

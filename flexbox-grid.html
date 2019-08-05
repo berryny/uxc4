@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8;ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using Flexbox, Grid and A11y</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header" role="banner">
+      <div role="img" class="logo"><img src="img/logo.png" alt="UXC4 Logo"></div>
+      <nav role="nav">
+        <menu></menu>
+      </nav>
+    </header>
+    <main class="main" role="main">
+      <div id="main" class="content">
+        <table role="grid"border="1">
+          <tr>
+            <td>Table Content 1</td>
+            <td>Table Content 2</td>
+            <td>Table Content 3</td>
+          </tr>
+        </table>
+        <div class="flexbox">
+          <div class="flex-cell">Flexbox Content 1</div>
+          <div class="flex-cell">Flexbox Content 2</div>
+          <div class="flex-cell">Flexbox Content 3</div>
+        </div>
+        <div class="row grid" role="grid">
+          <div role="gridcell">Grid Content 1</div>
+          <div role="gridcell">Grid Content 2</div>
+          <div role="gridcell">Grid Content 3</div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" role="contentinfo"></footer>
+  </div>
+</body>
+</html>
