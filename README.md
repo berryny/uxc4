@@ -75,10 +75,12 @@ body {
     background-color: powderblue;
 }
 h1 {
-    color: white;text-align: center;
+    color: white;
+    text-align: center;
 }
 p {
-    font-family: Verdana;font-size: 20px;
+    font-family: Verdana;
+    font-size: 20px;
 }
 ```
 
@@ -87,8 +89,10 @@ Utilize the Emmet Plugin for lazy coding
 
 *Type* or *Copy and Paste* the below into a saved html file
 
+Standard Layout
+
 ```
-html>(head>meta[http-equiv="Content-Type" content="text/html;charset=${charset};ie=edge"]+meta[ name="viewport" content="width=device-width, initial-scale=1.0"]+title{${1:My Portfolio Site}}+link:css)+body>div.wrapper>(header.header>nav+menu)+(main.main>div.content>p)+footer.footer
+html>(head>meta[http-equiv="Content-Type" content="text/html;charset=${charset};ie=edge"]+meta[ name="viewport" content="width=device-width, initial-scale=1.0"]+title{${1:My Portfolio Site}}+link:css)+body>div.wrapper>(header.header[role="banner"]>nav[role="nav"]>menu)+(main.main[role=main]>div#main.content>p)+(footer.footer[role="contentinfo"])
 ```
 
 Click the *Tab* key

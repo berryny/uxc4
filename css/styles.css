@@ -162,6 +162,10 @@ body {
   clear: both;
 }
 
+a:focus {
+  outline: none;
+  outline: 1px solid #333;
+}
 img {
   display: block;
   width: 100%;
