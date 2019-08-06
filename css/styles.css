@@ -430,7 +430,10 @@ footer .footer {
   }
 }
 
-/* CSS: Dropdown Menus */
+/*
+  CSS: Dropdown Menus using Flexbox
+  Learn more: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+*/
 .navigation {
   display: flex;
   align-items: center;
@@ -503,7 +506,7 @@ footer .footer {
 .navigation .icon { display: none; }
 @media only screen and (min-width: 600px) {
   .navigation nav {
-    /* Debug JS toggle for 600+ width */ 
+    /* Debug JS toggle for 600+ width */
     display: block !important;
   }
 }
