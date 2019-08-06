@@ -447,7 +447,6 @@ table {
   background-color: yellow;
   outline: 1px solid green;
 }
-
 /***
   Everything you need to learn CSS Grid Layout
   Learn more at https://gridbyexample.com/
@@ -466,7 +465,6 @@ table {
   /* grid-row-gap: 10px; */
   /* Short hand */
   grid-gap: 1em;
-
 }
 .grid .grid-item {
   outline: 1px solid orange;
