@@ -163,7 +163,6 @@ body {
 }
 
 a:focus {
-  outline: none;
   outline: 1px solid #333;
 }
 img {
@@ -431,6 +430,125 @@ footer .footer {
   }
 }
 
+/* CSS: Dropdown Menus */
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #76a8f5;
+}
+.navigation .logo {
+  width: 100px;
+}
+.navigation nav { width: auto; }
+.navigation nav menu { margin: 0; padding: 0; }
+.navigation nav a,
+.navigation nav a:hover {
+  color: #fff;
+  border: 0;
+  text-decoration: none;
+}
+.navigation nav a:focus { outline: 1px solid #333; }
+.navigation nav ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.navigation nav li {
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 1rem;
+  margin: 0;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+.navigation nav li a {
+  color: #fff;
+}
+.navigation nav li:hover,
+.navigation nav li:focus-within {
+    background: black;
+    cursor: pointer;
+}
+.navigation nav li:focus-within a {
+  outline: none;
+}
+.navigation nav ul li ul {
+  background-color: #0c6fad;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+  z-index: 999;
+}
+.navigation nav ul li:hover > ul,
+.navigation nav ul li:focus-within > ul,
+.navigation nav ul li ul:hover,
+.navigation nav ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+.navigation nav ul li ul li {
+  clear: both;
+  width: 6em;
+  text-align: left;
+}
+.navigation .icon { display: none; }
+@media only screen and (min-width: 600px) {
+  .navigation nav {
+    /* Debug JS toggle for 600+ width */ 
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* Style the navigation menu */
+  .navigation {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    flex-direction: column;
+  }
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .navigation nav {
+    display: none;
+    background-color: #0c6fad;
+    width: 100%;
+  }
+  .navigation nav ul li {
+    float: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .navigation nav ul li ul {
+    position: relative;
+  }
+  .navigation nav ul li ul{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    margin: 0;
+  }
+  .navigation nav ul li ul li {
+    width: auto;
+    text-align: center;
+  }
+  /* Style the hamburger menu */
+  .navigation .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    outline: none;
+  }
+}
 /* Flexbox and Grid Styles */
 table {
   width: 100%;

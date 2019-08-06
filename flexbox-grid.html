@@ -7,11 +7,30 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header" role="banner">
-      <div role="img" class="logo"><img src="img/logo.png" alt="UXC4 Logo"></div>
-      <nav role="nav">
-        <menu></menu>
+    <!-- .sr-only
+    * Hide only visually, but have it available for screen readers:
+    * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    -->
+    <a href="#main" class="sr-only">Skip to content</a>
+
+    <header class="navigation" role="banner">
+      <div role="img" class="logo"><img src="img/logo.png" alt="UXC4 Logo" width="100"></div>
+      <nav role="nav" id="menu">
+        <menu><ul class="menu clearfix">
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Work</a>
+          <ul class="dropdown">
+            <li><a href="#">Profolio</a></li>
+            <li><a href="#">Case Studies</a></li>
+          </ul></li>
+          <li><a href="#">Contact</a></li>
+        </ul></menu>
       </nav>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="mobileNavigationMenu()">
+        <!--Using Fontawesome (bars)-->
+        <i class="fas fa-bars"></i>
+      </a>
     </header>
     <main class="main" role="main">
       <div id="main" class="content">
@@ -39,5 +58,15 @@
     </main>
     <footer class="footer" role="contentinfo"></footer>
   </div>
+  <script type="text/javascript">
+    function mobileNavigationMenu() {
+      var menucontainer = document.getElementById("menu");
+      if (menucontainer.style.display === "block") {
+        menucontainer.style.display = "none";
+      } else {
+        menucontainer.style.display = "block";
+      }
+    }
+  </script>
 </body>
 </html>
