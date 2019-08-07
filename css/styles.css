@@ -569,6 +569,10 @@ table {
   background-color: yellow;
   outline: 1px solid green;
 }
+
+@supports (grid-area: auto) {
+
+}
 /***
   Everything you need to learn CSS Grid Layout
   Learn more at https://gridbyexample.com/
