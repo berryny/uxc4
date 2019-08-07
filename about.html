@@ -5,9 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>About Page</h1>
+  <div class="wrapper">
+    <header class="navigation" role="banner">
+      <div role="img" class="logo"><img src="img/logo.png" alt="UXC4 Logo" width="100"></div>
+      <nav role="nav" id="menu">
+        <menu><ul class="menu clearfix">
+          <li><a href="about.html">About</a>
+            <ul class="dropdown">
+              <li><a href="#">Download Resume</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Work</a>
+          <ul class="dropdown">
+            <li><a href="#">Profolio</a></li>
+            <li><a href="#">Case Studies</a></li>
+          </ul></li>
+          <li><a href="#">Contact</a></li>
+        </ul></menu>
+      </nav>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="mobileNavigationMenu()">
+        <!--Using Fontawesome (bars)-->
+        <i class="fas fa-bars"></i>
+      </a>
+    </header>
+
+  <main class="main" role="main">
+    <div id="heroID" class="heroClass">
+      <div class="hero_txt">
+        <h1>About Page</h1>
+        <a href="#" target="_blank">learn more</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>&copy; 2019 Coding Instuctor HTML</p>
+      <p>Copyright &copy; 2019 Copyright Holder All Rights Reserved.</p>
+      <div class="socialmedia">
+        <!-- Using Fontawesome to render social media icons
+        https://fontawesome.com/start
+      -->
+        <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="" target="_blank"><i class="fab fa-dribbble"></i></a>
+        <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+        <a href="" target="_blank"><i class="fab fa-flickr"></i></a>
+        <a href="" target="_blank"><i class="fab fa-tumblr-square"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</div><!--end .wrapper -->
 </body>
 </html>
