@@ -83,6 +83,58 @@ p {
     font-size: 20px;
 }
 ```
+## JavaScript
+What is JavaScript?
+
+- JavaScript is not Java
+- JavaScript == ECMAScript
+- European Computer Manufacturers Association (ECMA). The organization was founded in 1961 to standardize computer systems in Europe. ECMAScript is commonly used for client-side scripting on the World Wide Web
+- Programming language of the web
+- Commonly used for Front-end development (what happens on the browser)
+- Creates interactions
+- Servers side (Back-end Development)
+
+```
+/*  Immediately-Invoked Function Expression, or IIFE for short.
+    Executes after the document loads (ready)
+*/
+(function() {
+  "use strict";
+  /*
+    "use strict"; Defines that JavaScript code should be executed in "strict mode".
+    Not required but learn more at
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
+  */
+
+  /* Lets add an event listener for when the page loads
+  by adding DOMContentLoaded
+  */
+  window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('window.addEventListener', window.addEventListener);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var year = 2018;
+
+    /* Using the new Date() function
+    new is a keyword which is required for Date
+    https://www.w3schools.com/js/js_date_methods.asp
+    */
+    var d = new Date();
+    console.log('d', d);
+    var currentYear = d.getFullYear();
+
+    console.log('DOMContentLoaded innerHTML', document.querySelector('.footer'));
+    console.log('DOMContentLoaded textContent', document.querySelector('.footer').textContent);
+    /* Add copyright year */
+    var classYearElement = document.querySelector('footer .year');
+    //classYearElement.innerHTML = year;
+    classYearElement.innerHTML = currentYear;
+
+  });
+
+})(); // the end!
+```
 
 ## Using Emmet
 Utilize the Emmet Plugin for lazy coding
