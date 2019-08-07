@@ -64,15 +64,14 @@
   });
 
   document.addEventListener('DOMContentLoaded', function() {
-    var year = 2018;
-
+    var year = 2018; // hard-coded
     /* Using the new Date() function
     new is a keyword which is required for Date
     https://www.w3schools.com/js/js_date_methods.asp
     */
     var d = new Date();
     console.log('d', d);
-    var currentYear = d.getFullYear();
+    var currentYear = d.getFullYear(); // dynamic data
 
     console.log('DOMContentLoaded innerHTML', document.querySelector('.footer'));
     console.log('DOMContentLoaded textContent', document.querySelector('.footer').textContent);
@@ -81,7 +80,23 @@
     //classYearElement.innerHTML = year;
     classYearElement.innerHTML = currentYear;
 
+    /* Listen for onclick action **/
+    document.querySelector('.downloadresume').onclick = downloadResumeClick;
   });
+
+  function downloadResumeClick() {
+    var answer = window.confirm("Click Ok, to download resume. Click Cancel, to visit LinkedIn Profile.");
+    answer;
+
+    console.log("click answer: ", answer);
+    // If Else statment
+    if (answer === true) {
+    console.log("You clicked Ok.");
+    } else {
+      console.log("You clicked Cancel.");
+      window.location.href = 'https://www.linkedin.com/';
+    }
+  }
 
 
 /*
