@@ -432,6 +432,7 @@ table {
   width: 100%;
   margin-bottom: 2%;
 }
+
 .flexbox {
   display: flex;
   flex-direction: row;
@@ -456,12 +457,12 @@ table {
     defining grids like any other CSS length such as
     %, px or em.
   */
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: 1fr 3fr 1fr 5fr; */
   grid-template-columns: repeat(3, 1fr);
-  /* grid-column-gap: 2%; */
-  /* grid-row-gap: 10px; */
+  grid-column-gap: 5%;
+  grid-row-gap: 10px;
   /* Short hand */
-  grid-gap: 1em;
+  /* grid-gap: 1em; */
 
 }
 .grid .grid-item {
