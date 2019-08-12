@@ -97,8 +97,6 @@
       window.location.href = 'https://www.linkedin.com/';
     }
   }
-
-
 /*
 Assigning a variable to store strings and integer:
 Create a variable called cityName and assign the value New York to it.

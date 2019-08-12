@@ -1,0 +1,235 @@
+/*
+	HTML boilerplate
+	HTML5 Boilerplate is an HTML, CSS and JavaScript template for creating HTML5 websites with cross-browser capability.
+	https://html5boilerplate.com/
+*/
+@import url("normalize.css");
+@import url("main.css");
+/*
+	Including non-browser fonts
+	Source: Google Fonts
+	----
+	font-family: 'Lato', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+/*
+	Import Fontawesome to render social media icons locally
+	Learn more at https://fontawesome.com/start
+	Files: css/all.min.css
+*/
+@import "all.min.css";
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+.sr-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.sr-text:hover,
+.sr-text:active,
+.sr-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+/*--------------------------------------------------------------
+Global
+--------------------------------------------------------------*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .logo img {
+  display: block;
+  /* width: 20%; */
+  width: 100px;
+}
+.menu-section {
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+	/* border-bottom: 1px solid hsl(0, 0%, 0%); */
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background: hsl(0, 0%, 15%);
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: .6em 1em;
+}
+
+.menu li a:hover {
+	background: hsl(0, 0%, 25%);
+}
+
+/* Styles for Single Level Menu */
+@media screen and (max-width: 30em){
+  .header {
+    flex-direction: column;
+  }
+  .header .logo img {
+    margin: 0 auto;
+  }
+	.multi-level-nav ul ul li a {
+		padding-left: 2em;
+	}
+
+	.dropdown-toggle {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 30em){
+	.multi-level-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+	}
+
+	.multi-level-nav li {
+    flex: 1 0 auto;
+		position: relative;
+	}
+
+	li.has-children > a {
+		padding-right: 0;
+	}
+
+	.multi-level-nav ul ul {
+		display: none;
+		position: absolute;
+		z-index:100;
+	}
+
+	.multi-level-nav ul ul li {
+    flex: 1 1 auto;
+	}
+
+	.multi-level-nav ul .toggled-on {
+		display: flex;
+	}
+
+	.dropdown-toggle {
+		margin: 0;
+		padding: 0 .5em;
+		border: 0;
+		font-family: 'FontAwesome';
+		content: "";
+		text-transform: lowercase; /* Stop screen readers to read the text as capital letters */
+		background-color: transparent;
+	}
+
+	.dropdown-toggle:after {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 42px;
+		color: white;
+		content: "\f107";
+		line-height: 1em;
+	}
+
+	.dropdown-toggle:hover,
+	.dropdown-toggle:focus {
+		background: hsl(0, 0%, 25%);
+	}
+
+	.dropdown-toggle.toggle-on:after {
+		content: "\f106";
+	}
+}
+
+/*--------------------------------------------------------------
+Main Site Content
+--------------------------------------------------------------*/
+
+main, .main {
+  margin-top: 5%;
+}
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+
+footer, .footer {
+  border-top: 1px solid #333;
+  margin-top: 10%;
+}
+
+/*
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-content: center;
+}
+.header .logo img {
+  display: inline-block;
+  width: 100px;
+}
+.header nav menu {
+  margin: 0;
+  padding: 0;
+}
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header nav ul li {
+  margin-right: 10%;
+}
+.header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+  .header nav ul li a {
+    display: block;
+    font-size: 1em;
+    font-weight: 300;
+  }
+  footer, .footer {
+    border-top: 1px solid red;
+  }
+
+}
+*/
