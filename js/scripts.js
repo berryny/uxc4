@@ -38,7 +38,7 @@
   DOM (Document Object Model)
   - To access the outline of the page. Collects all the elements writen in the HTML.
   Provides methods and properties of each elements (id, class, tagnames)
-  - document.getElementById('id')
+  - document.getElementById('#id')
   - document.querySelector('.myclassname')
   - document.querySelectorAll('div > p')
   Properties:
