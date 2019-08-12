@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FirstName LastName Portfolio</title>
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Building Flexbox Responsive (Drop-Down) Menu -->
+    <header class="header" role="banner">
+      <div class="logo" role="img">
+        <a href="index.html">
+          <img src="img/logo.png" alt="FirstName LastName Portfolio Logo">
+        </a>
+      </div>
+      <section class="menu-section">
+        <nav id="multi-level-nav" class="multi-level-nav menu" role="navigation">
+            <ul>
+              <li><a href="#">About</a>
+                  <ul class="sub-menu">
+                      <li><a href="#">The Eat Story</a></li>
+                      <li><a href="#">Meet the Chef</a></li>
+                      <li><a href="#">Meet the Team</a></li>
+                      <li><a href="#">Our Vendors</a></li>
+                      <li><a href="#">Legal</a></li>
+                  </ul>
+              </li>
+                <li class="has-children">
+                    <a href="#">Work<button class="dropdown-toggle" aria-expanded="false"><span class="sr-text">Expand child menu</span></button></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Project 1</a></li>
+                        <li><a href="#">Project 2</a></li>
+                        <li><a href="#">Project 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav><!-- #multi-level-nav .multi-level-nav -->
+      </section><!-- .menu-section -->
+    </header><!--end of header/banner -->
+
+    <main class="main">
+      Main Site Content
+    </main>
+
+    <footer class="footer">
+      Footer Information
+    </div>
+
+    <script src="js/menu.js" charset="utf-8"></script>
+</body>
+</html>
