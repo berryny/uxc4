@@ -1,3 +1,9 @@
+/*
+	Import Fontawesome to render social media icons locally
+	Learn more at https://fontawesome.com/start
+	Files: css/all.min.css, /webfonts
+*/
+@import "all.min.css";
 @import url("normalize.css");
 @import url("main.css");
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
@@ -66,7 +72,7 @@ ul {
 .hero .slick-dots li.slick-active button:before {
   color: yellow;
 }
-
+/* Style Footer Here */
 .footer {
   display: flex;
   justify-content: center;
@@ -77,7 +83,14 @@ ul {
   margin-top: 10%;
 }
 .footer .copy { margin-right: 5%; }
-.footer .socialmedia li { display: inline-block; width: 12px;}
+.footer .socialmedia.icons li { display: inline-block; width: 12px;}
+.footer .socialmedia.fontawesome li {
+  display: inline-block;
+}
+.footer .socialmedia.fontawesome li,
+.footer .socialmedia.fontawesome li a {
+  color: black;
+}
 
 @media only screen and (max-width: 30em) {
   .header {
