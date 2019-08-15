@@ -35,9 +35,11 @@ ul {
 
 .header nav ul li {
   display: inline-block;
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
-
+.header nav ul li a {
+  padding: 30px;
+}
 .hero {
   position: relative;
   display: flex;
@@ -51,6 +53,9 @@ ul {
 .hero .gallery { width: 40%; }
 .hero .introduction {
   width: 40%;
+}
+.hero .introduction h1 {
+  margin-top: 0;
 }
 .hero .index-carousel {
   max-width: 800px;
