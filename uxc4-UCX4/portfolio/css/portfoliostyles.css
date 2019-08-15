@@ -3,7 +3,7 @@
 	Learn more at https://fontawesome.com/start
 	Files: css/all.min.css, /webfonts
 */
-@import "all.min.css";
+@import url("all.min.css");
 @import url("normalize.css");
 @import url("main.css");
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
