@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Content Template</title>
+  <link rel="stylesheet" href="https://use.typekit.net/opf3uqn.css">
+  <style type="text/css">
+    /*@import url("https://use.typekit.net/opf3uqn.css");*/
+    body {
+      background-color: #e9edef;
+      font-family: "acumin-pro", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .hero {
+      background-color: white;
+      text-align: center;
+      padding-bottom: 2%;
+      margin-bottom: 2%;
+    }
+    .hero h1 {
+      background-color: blue;
+      color: white;
+      font-size: 3em;
+      font-family: open-sans, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      line-height: .75em;
+      padding: 5% 0;
+    }
+    .hero h1 small {
+      display: block;
+    }
+    .projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+    }
+    .projects > div {
+      margin-bottom: 2em;
+      background-color: white;
+    }
+    .projects .project-details {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-column-gap: 1em;
+      align-items: center;
+    }
+    .projects .project-details img {
+      display: block;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 30em) {
+      .projects .project-details {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <header role="banner">
+    header
+  </header>
+  <main>
+    <section class="hero">
+          <h1>Hello <small>my name</small></h1>
+          <h2>Paul</h2>
+          <p>User Experience Designer</p>
+    </section>
+
+    <div class="projects">
+      <div class="project-details">
+        <a href="project1.html">
+          <img src="https://picsum.photos/200" alt="Project 1 Image">
+        </a>
+        <div class="project-content">
+          <h1>Project 1</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p><a href="project1.html">Read more &gt;</a></p>
+          <p><a href="http://google.com" target="_blank">View Project in Action &gt;</a></p>
+        </div>
+      </div>
+
+      <div class="project-details">
+        <img src="https://picsum.photos/200" alt="Project 2 Image">
+        <div class="project-content">
+          <h1>Project 2</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p><a href="project2.html">Read more &gt;</a></p>
+        </div>
+      </div>
+
+      <div class="project-details">
+        <img src="https://picsum.photos/200" alt="Project 3 Image">
+        <div class="project-content">
+          <h1>Project 3</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p><a href="project3.html">Read more &gt;</a></p>
+      </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>Footer</footer>
+</body>
+</html>
