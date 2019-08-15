@@ -86,6 +86,7 @@ ul {
 .footer .socialmedia.icons li { display: inline-block; width: 12px;}
 .footer .socialmedia.fontawesome li {
   display: inline-block;
+  margin-right: 10px;
 }
 .footer .socialmedia.fontawesome li,
 .footer .socialmedia.fontawesome li a {
